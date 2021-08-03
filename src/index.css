@@ -1,0 +1,256 @@
+@import url("https://fonts.google.com/css2?family=Montserrat&display=swap");
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body,
+ #root {
+   height: 100vh;
+   margin: 0;
+}
+
+body, input, select, textarea, button {
+     font-size: 1.6rem;
+     font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+    grid-template-rows: 5rem 1fr 5rem; /* fr=fragment 5=header 1=main 5=footer rem=10% so 5rem=50% */
+    grid-template-columns: 1fr;    /*1fr=600px*/
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    background-color: #203040;
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    padding: 0.5rem ;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+} 
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff8000;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;
+    justify-content: center; /* horizontally */
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+}
+.main {
+    /* flex:3 60rem; */
+    width: 70%;
+}
+.sidebar {
+    /* flex:1 20rem; */
+    width: 30%;
+}
+
+/*products*/
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.products li {
+    flex: 0 1 29rem;
+    height: 47rem;
+    padding: 1rem;
+    margin-bottom:30px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.product img{
+    width: 33rem;
+    height: 40rem;    
+}
+.product-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-price div,
+.product-price button {
+    text-align: center;
+    flex: 1;
+}
+.product-price div {
+    font-size: 2rem;
+}
+.button {
+    padding: 1rem;
+    border: 0.1rem #c0c0c0 solid;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    width: 200px;
+}
+.button.primary {
+    background-color: #ffc000;
+}
+.button:hover {
+    border: 0.1rem #0e0c06 solid;
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    border-bottom: 0.1rem #c0c0c0 solid;
+}
+
+.filter div {
+    flex: 1;
+}
+/* 
+.cart {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;    
+} */
+
+.cart-header {
+    border-bottom: 0.1rem #c0c0c0 solid;
+}
+
+.cart-items {
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+.cart-items img {
+    width: 5rem;
+}
+
+.cart-items li {
+    display: flex;
+    width: 100%;
+}
+
+.cart-items li div {
+    padding: 0.5rem;
+}
+
+.cart-items li div:last-child {
+    flex:1;
+}
+.right {
+    text-align: right;
+}
+/* .total {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+} */
+
+.total > div,
+.total > button {
+    flex: 1;
+}
+
+.total > div {
+    font-size: 2rem;
+}
+
+.main-container{
+    width: 100%;
+    height: auto;
+}
+
+.container-1, .container-2{
+    width: 100%;
+}
+.con-pt-a, .con-pt-b{
+    width: 100%;
+}
+.con-pt-b-1{
+    width: 97%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+    /* topbottom,leftright */
+}
+
+.form-container {
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+}
+
+.form-container li {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+input {
+    padding: 1rem;
+    border: 0.1rem #c0c0c0 solid;
+}
+
+.product-details {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-height: 96vh;
+}
+
+.product-details img {
+    max-width: 46rem;
+    max-height: 100vh;
+    margin: 0 auto;
+}
+
+.product-details-description {
+    flex: 1 1;
+    margin: 1rem;
+}
+
+.close-modal{
+    position: absolute;
+    right: 1rem;
+    top: 2.5rem;
+    z-index: 1000;
+}

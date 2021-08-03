@@ -1,0 +1,70 @@
+{
+    "products": [
+        {
+            "_id": "dress1",
+            "title": "Midi sundress with shrirring detail",
+            "image": "https://images-na.ssl-images-amazon.com/images/I/61ou24QU7LL._UL1500_.jpg",
+            "description": "this is for all the latest trends",
+            "price": 29.9,
+            "availableSizes": [
+                "XL",
+                "XXL",
+                "X",
+                "L"
+            ]
+        },
+        {
+            "_id": "dress2",
+            "title": "Midi sundress with ruched front",
+            "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-720w,f_auto,q_auto:best/newscms/2019_16/1426487/astr_the_label_floral_ruched_front_maxi_dress.jpeg",
+            "description": "this is for all the latest trends",
+            "price": 18.9,
+            "availableSizes": [
+                "X",
+                "L",
+                "M"
+            ]
+        },
+        {
+            "_id": "dress3",
+            "title": "Midi dress in pink disty floral",
+            "image": "https://www.andindia.com/media/catalog/product/cache/a8e60f747ccf7a1531bde73b3776ea07/s/s/ss20as014tub100_redwht_4_.jpg",
+            "description": "this is for all the latest trends",
+            "price": 14.9,
+            "availableSizes": [
+                "X",
+                "M",
+                "L"
+            ]
+        },
+        {
+            "_id": "dress4",
+            "title": "cami maxi dress in polka dot",
+            "image": "https://images-na.ssl-images-amazon.com/images/I/71KZXxmPYCL._UX569_.jpg",
+            "description": "this is for all the latest trennds",
+            "price": 25.9,
+            "availableSizes": [
+                "XL"
+            ]
+        },
+        {
+            "_id": "dress5",
+            "title": "Frill mini dress in yellow polka dot",
+            "image": "https://m.media-amazon.com/images/I/71i1SgcBKqL._MCnd_AC_UL320_.jpg",
+            "description": "this is for all the latest trends",
+            "price": 10.9,
+            "availableSizes": [
+                "XL",
+                "XXL"
+            ]
+        },
+        {
+            "_id": "dress6",
+            "title": "Midi tea dress in blue and red spot",
+            "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/productimage/2021/2/13/3f173de1-f9f2-4d47-b332-66b4010cfec71613210434584-1.jpg",
+            "description": "this is for all the latest trends",
+            "price": 49.9,
+            "availableSizes": ["XL","XXL"]
+        }
+    ]
+}
